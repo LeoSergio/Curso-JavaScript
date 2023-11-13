@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Formatação de String;
+        var nome = prompt('Qual é o seu nome?');
+        document.write(`Olá, ${nome} ! Seu nome tem ${nome.length } Letras. <br/>`); 
+
+        document.write(`Seu nome em maiuscula é ${nome.toUpperCase()}.<br/>`);
+
+        document.write(`Seu nome em minusculo é ${nome.toLowerCase()}.`);
+
+        //Formatação de Numeros;
+        var n1 = 1543.5;
+        n1.toFixed(2); //Fica 1543.50; acrescenta duas casa;
+        n1.toFixed(2).replace('.', ','); //Trocar o ponto pela Virgula;
+        n1.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}); // Colocar o valor para a moeda brasileira, no "BRL" pode ser add a moeda dos outros países como EUA(USD=dolar);
+
+
+    </script>
+</body>
+</html>
