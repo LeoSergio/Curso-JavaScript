@@ -1,0 +1,21 @@
+@charset "UTF-8";
+body{
+    background: rgb(76, 76, 201);
+}
+header{
+    color:white;
+    text-align: center;
+}
+section{
+    background: white;
+    width:500px;
+    margin:auto;
+    padding:1rem;
+}
+#form1 input{
+    padding: 0.5rem 0;
+}
+footer{
+    text-align: center;
+    color:white;
+}
