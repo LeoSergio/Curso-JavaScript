@@ -12,12 +12,15 @@ function contar() {
     var res = v1;
 
     for (var ini = res; res <= v2; res += v3) {
-        if(res == 0){
-            alert('[ERRO] o Passo não pode ser 0');
-        }
-        msg.innerHTML = `Sua contagem é ${res}`;
-    }
+    msg.innerHTML = `Sua contagem é ${res}`;
+
 }
+
+if(v3 == 0){
+    alert('[ERRO] o Passo não pode ser 0');
+}
+}
+
 
 /*
 
