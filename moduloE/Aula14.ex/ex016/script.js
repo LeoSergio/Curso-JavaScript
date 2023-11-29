@@ -11,14 +11,27 @@ function contar() {
     var msg = document.getElementById('msg'); // Adicionando a referência ao elemento onde o resultado será exibido
     var res = v1;
 
-    for (var ini = res; res <= v2; res += v3) {
-    msg.innerHTML = `Sua contagem é ${res}`;
-
-}
-
-if(v3 == 0){
-    alert('[ERRO] o Passo não pode ser 0');
-}
+    if(inicio.value.length == 0 || fim.value.length == 0 || passo.value.lenght ==0){
+        alert('[ERRO] Faltam Dados')
+    }else{
+        msg.innerHTML = `Contando:`
+    }
+    if(passo <= 0){
+        alert('[ERRO] o Passo não pode ser 0,será considerado 1');
+        passo = 1;
+    }
+        //Contagem Crescente
+    if(v1 < v2){
+        for (var ini = res; ini <= v2; ini += v3) {
+        msg.innerHTML = `${ini} \u{1f449}`;
+            }
+    }else{
+        //Contagem regresssiva
+        for(var ini = res; ini >= v2; ini -= v3){
+            msg.innerHTML = `${ini}\u{1f449}`;
+        }
+    } 
+      msg.innerHTML += `\u{1f449}`;
 }
 
 
