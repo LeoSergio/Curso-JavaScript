@@ -5,9 +5,9 @@ let valores = [];
 
 function isNumero(n){
     if(Number(n)>= 1 && Number(n) <=100){
-        return true
+        return true;
     }else{
-        return false
+        return false;
     }
 }
 
@@ -16,7 +16,7 @@ function inLista(n,l){
         return true;
         
     } else{
-        return false
+        return false;
     }
 }
 
