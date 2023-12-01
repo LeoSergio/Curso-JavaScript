@@ -23,15 +23,20 @@ function inLista(n,l){
 function adicionar(){
     if(isNumero(num.value) && !inLista(num.value,valores)){
         valores.push(Number(num.value));
+
         let item = document.createElement('option');
-        item.text = `Valor ${num.value} Adicionado.`
+
+        item.text = `Valor ${num.value} Adicionado.`;
+
         lista.appendChild(item);
+
         res.innerHTML = '';
+
     }else{
         alert('Valor invalido ou já encontrado na lista');
     }
-    num.value = '';
-    num.focus();
+    num.value = ''; // Deixar num vazio
+    num.focus(); //focu no num
 }
 function finalizar(){
     if(valores.length == 0){
