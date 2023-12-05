@@ -21,5 +21,4 @@ function lost(){
     
     msg.innerHTML = `Se você fumar <strong>${qcig}</strong> Cigarros por dia durante <strong>${qyear} </strong>ano(s), você diminuira <strong>${res.toFixed(0)}</strong> dias da sua vida`;
 
-
 }
