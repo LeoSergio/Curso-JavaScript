@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    body{
+        background:rgb(130, 208, 222);
+    }
+    header{
+        text-align: center;
+        padding:1rem;
+    }
+    main{
+        background: #fff;
+        margin:auto;
+        width:500px;
+    }
+    section{
+        margin:1rem;
+        padding:1rem 0;
+        width:200px;
+    }
+    section p{
+        padding:1rem;
+    }
+    section input{
+        margin:1rem 0;
+    }
+    #msg{
+        border:1px solid red;
+        padding:1rem;
+        font-size: 1.2em;
+    }
+</style>
+<body>
+
+    <header>
+        <h1>Dias de um fumante</h1>
+    </header>
+
+    <main>
+<section>
+    <p><strong>Redução de vida por causa do Cigarro</strong>:</p>
+        
+        <label for="day">Quantidade de Cigarros Fumados por dia:</label>
+        <input type="number" name="#" id="cig">
+
+        <label for="year">Quantos Anos Usando Cigarro:</label>
+        <input type="number" name="#" id="year">
+
+        <input type="button" value="Calcular" onclick="lost()">
+        
+    
+</section>
+
+        <div id="msg">
+            Resultado:
+            
+        </div>
+    </main>
+
+
+    <script src="script16.js"></script>
+
+</body>
+</html>
