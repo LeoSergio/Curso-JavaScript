@@ -10,12 +10,16 @@ function voting(){
     let vot = document.getElementById('vot');
     let v = Number(vot.value);
 
-    if( v >= 18 && v <= 59){
-        msg.innerHTML = `Voto obrigatório`;
-    }else if((v >=16 && v < 18  ) || v >=60) {
-        msg.innerHTML = `Voto Opcional`;
+    let ano = new Date();
+    let anoAtual = ano.getFullYear();
+    let nasc = anoAtual - v;
+    
+    if( nasc >= 18 && nasc <= 59){
+        msg.innerHTML = `Você tem <strong>${nasc} </strong>Anos,Voto obrigatório`;
+    }else if((nasc >=16 && nasc < 18  ) || nasc >=60) {
+        msg.innerHTML = `Você tem <strong>${nasc} </strong>Anos,Voto Opcional`;
     }else{
-        msg.innerHTML = `Não vota`
+        msg.innerHTML = `Você tem <strong>${nasc} </strong>Anos, Não vota!`
     }
         
     }
