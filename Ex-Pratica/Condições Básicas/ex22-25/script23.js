@@ -14,7 +14,14 @@ function money(){
     let gen = (sex.value).toUpperCase();
 
     let num = document.querySelector('#num');
-    let real = num.value;
-
-    alert(`${nome} ${gen} ${real}`);
+    let real = Number(num.value);
+    //alert(`${nome} ${gen} ${real}`);
+    if(gen == 'M'){
+        let desc = real - (real * 0.05);
+        msg.innerHTML = `<strong>${nome}</strong> Sua conta foi de <strong>${real.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} </strong>, devido a promoção você ganhou <strong>5%</strong> de desconto que ficou <strong>${desc.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</strong>`
+    }
+    if(gen == 'F'){
+        let desc = real - (real * 0.13);
+        msg.innerHTML = `<strong>${nome}</strong> Sua conta foi de <strong>${real.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} </strong>, devido a promoção você ganhou <strong>13%</strong> de desconto que ficou <strong>${desc.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</strong>`
+    }
 }
