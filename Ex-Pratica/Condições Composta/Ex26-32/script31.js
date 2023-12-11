@@ -35,7 +35,6 @@ function gamelis(){
         msg.innerHTML = `Jogador 2 Ganhou`;
     }
       
-    
     if( jog1 == jog2 && jog2 ==jog1) {
         msg.innerHTML = `Empate, Jogue de Novo`;
     }
