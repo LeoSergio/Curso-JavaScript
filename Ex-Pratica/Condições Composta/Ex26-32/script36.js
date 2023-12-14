@@ -12,7 +12,18 @@ calcule e mostre quantos pontos ela teve e quanto dinheiro ela conseguiu ganhar.
 function exercice(){
     let hrs = document.getElementById('hrs');
     let hrsm = Number(hrs.value);
-    if(hrs<10){
+
+    if(hrsm<=10){
         let pt = hrsm*2;
+        let money = pt*0.05;
+        msg.innerHTML = `Você teve ${hrsm} horas por mês, ganhou ${pt} Pontos e Faturou ${money}`
+    }else if(hrsm>10 && hrsm<=20){
+        let pt = hrsm*5;
+        let money = pt*0.05;
+        msg.innerHTML = `Você teve ${hrsm} horas por mês, ganhou ${pt} Pontos e Faturou ${money}`
+    }else{
+        let pt = hrsm*10;
+        let money = pt*0.05;
+        msg.innerHTML = `Você teve ${hrsm} horas por mês, ganhou ${pt} Pontos e Faturou ${money.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`
     }
 }
