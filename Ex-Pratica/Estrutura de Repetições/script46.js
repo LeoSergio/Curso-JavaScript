@@ -4,11 +4,10 @@ Crie um programa que calcule e mostre na tela o resultado da soma entre 6 +
 */
 
 function loop(){
-    let i =6;
-    let f = 10;
-    let inc = 2;
-for(let ct=i; i<=f; i+=inc){
-    let cont = ct;
-    res.innerHTML += `${cont}`;
+    
+    
+for(let i=6; i<=100; i+=2){
+    let ct = i;
+    res.innerHTML += `${ct} ,`;
 }
 }
