@@ -12,9 +12,23 @@ function loop(){
     let num2 = document.querySelector('#num2');
     let final = Number(num2.value);
     let incre = document.querySelector('#incre');
-    let ct = '';
-    for(let i=inicio; i<=final; i+=incre){
-         ct += i+'';
-        console.log(`${ct}`);
-    }    
+    let ct1 = Number(incre.value);
+
+    if(inicio<=final){
+        for(let i=inicio; i<=final; i+=ct1){
+            let ct = i; 
+            res.innerHTML += `${ct} ,`;
+         }  
+             res.innerHTML += 'FIM';
+             
+    }else if(inicio>final){
+        for(let i=inicio; i>=final; i-=ct1){
+            let ct = i;
+            res.innerHTML += `${ct} ,`;
+
+        }
+        res.innerHTML += `FIM` 
+    }
+    
+        
 }
