@@ -12,9 +12,9 @@ function loop(){
     let num2 = document.querySelector('#num2');
     let final = Number(num2.value);
     let incre = document.querySelector('#incre');
-
-    for(let i=inicio; i<=final; i==incre){
-        let ct = i;
+    let ct = '';
+    for(let i=inicio; i<=final; i+=incre){
+         ct += i+'';
         console.log(`${ct}`);
     }    
 }
