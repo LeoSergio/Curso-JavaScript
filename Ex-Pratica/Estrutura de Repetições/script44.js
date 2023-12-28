@@ -11,7 +11,9 @@ function loop(){
     let inicio = Number(num1.value);
     let num2 = document.querySelector('#num2');
     let final = Number(num2.value);
-    let incre = document.querySelector('#invcre');
+    let incre = document.querySelector('#incre');
 
-    
+    for(ct=inicio; ct<=final;ct==incre ){
+        
+    }    
 }
