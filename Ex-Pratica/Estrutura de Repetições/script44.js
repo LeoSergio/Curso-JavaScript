@@ -13,7 +13,8 @@ function loop(){
     let final = Number(num2.value);
     let incre = document.querySelector('#incre');
 
-    for(ct=inicio; ct<=final;ct==incre ){
-        
+    for(let i=inicio; i<=final; i==incre){
+        let ct = i;
+        console.log(`${ct}`);
     }    
 }
